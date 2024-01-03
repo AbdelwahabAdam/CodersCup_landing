@@ -550,7 +550,7 @@ box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
     .rules .container {
       display: grid;
 place-items: center;
-width: 750px;
+width: 390px;
 box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5); 
 grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 grid-gap: 20px;
@@ -560,11 +560,18 @@ grid-gap: 20px;
     width: 250px;
   }
   .rounded-list .side .side-a li {
-    width: 60px;
-    display: block;
+    width: fit-content;
+   
   }
   .rounded-list .side .side-a {
-    width: 150px;
+    width: fit-content;
+    display: va;
+  }
+  .rounded-list .side .side-a .special {
+    padding: 0;
+    margin: 0;
+    position: static;
+    box-sizing: border-box;
   }
     }
 
@@ -938,8 +945,8 @@ margin-right: 0px;
   font-weight: 600;
   margin: 10px 10px 30px;
   text-align: center;
-  background: -webkit-linear-gradient(90deg, rgba(111,111,115,1) 0%, rgba(147,147,182,1) 60%, rgba(5,131,157,1) 100%);
-  -webkit-background-clip: text ;
+  background: -webkit-linear-gradient(240deg, rgba(111,111,115,1) 0%, rgba(147,147,182,1) 60%, rgba(5,131,157,1) 100%);
+  background-clip: text ;
   -webkit-text-fill-color: transparent;
 }
 
@@ -1028,7 +1035,9 @@ border-bottom: 2px solid rgba(11, 11, 11, 0.12);
  .textarea textarea:valid ~.underline::before, .underline::after {
   transform: scale(1);
  }
- 
+ .submit-btn {
+  margin: 30px;
+ }
  .submit-btn .input-data {
   height: 45px !important;
   width: 25% !important;
@@ -1042,14 +1051,13 @@ border-bottom: 2px solid rgba(11, 11, 11, 0.12);
   position: absolute;
   left: -100%;
   transition: all 0.3s;
-  background:-webkit-linear-gradient(90deg, rgba(111,111,115,1) 0%, rgba(147,147,182,1) 60%, rgba(5,131,157,1) 100%); ;
+  background:-webkit-linear-gradient(240deg, rgba(111,111,115,1) 0%, rgba(147,147,182,1) 60%, rgba(5,131,157,1) 100%); ;
  }
  
 
  .submit-btn .input-data:hover .inner {
   left: 0;
  }
-
  .submit-btn .input-data input {
   position: relative;
   z-index: 2;
@@ -1065,7 +1073,8 @@ border-bottom: 2px solid rgba(11, 11, 11, 0.12);
 
   @media (max-width: 767px) {
     .form-askus .container-ask{
-      margin-left: 0px;
+      margin-left: 39px;
+      width: 332px;
     }
    
   .form-askus .container-ask .text {
