@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/all.min.css" />
     <!-- Main Template CSS File -->
     <link rel="stylesheet" href="css/master.css" />
+    <link rel="stylesheet" href="main.js"/>
    
    <!-- Google Fonts -->
    <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -22,11 +23,18 @@
     <header>
         <div class="container">
           <a href="#" class="logo">
-          
             <img   src="pic/logo.jpg" alt="Logo" >
        
           </a>
           <nav>
+ <script>const toggleMenu = document.querySelector('.toggle-menu');
+  toggleMenu.addEventListener('click', toggleMenuFunction);
+  </script>
+  <script>
+    function toggleMenuFunction() {
+        const ul = document.querySelector('header nav ul');
+        ul.classList.toggle('show');
+      }</script>
             <i class="fas fa-bars toggle-menu"></i>
             <ul>
               <li><a class="active" href="#">Home</a></li>
