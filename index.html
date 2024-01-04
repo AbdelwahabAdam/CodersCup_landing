@@ -21,22 +21,18 @@
   </head>
     <!-- Start Header -->
     <header>
+     
+    
         <div class="container">
           <a href="#" class="logo">
             <img   src="pic/logo.jpg" alt="Logo" >
        
           </a>
           <nav>
- <script>const toggleMenu = document.querySelector('.toggle-menu');
-  toggleMenu.addEventListener('click', toggleMenuFunction);
-  </script>
-  <script>
-    function toggleMenuFunction() {
-        const ul = document.querySelector('header nav ul');
-        ul.classList.toggle('show');
-      }</script>
+      
             <i class="fas fa-bars toggle-menu"></i>
             <ul>
+              <script>document.addEventListener('click',(e)=>{console.log(e.target)})</script>
               <li><a class="active" href="#">Home</a></li>
               <li><a href="#timeline">time line</a></li>
               <li><a href="#Categories">Categories</a></li>
